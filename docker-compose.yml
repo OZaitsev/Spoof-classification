@@ -1,0 +1,11 @@
+services:
+  spoof_with_git:
+    image: spoof:ml_flow
+    container_name: sp_mlflow
+    volumes:
+      - C:\_Dev\workspace\projects\spoof:/wrk/
+    working_dir: /wrk/
+    network_mode: host
+    tty: true
+    stdin_open: true
+    user: root
